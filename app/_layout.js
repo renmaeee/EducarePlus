@@ -20,6 +20,8 @@ function ProtectedLayout() {
         headerShown: false,
       }}
     >
+      {/* Public website tabs - accessible without login */}
+      <Stack.Screen name="Tabs" />
       <Stack.Screen name="login" />
       {/* The (dashboard) group now defines its own layout, which includes the sidebar */}
       <Stack.Screen name="(dashboard)" />
