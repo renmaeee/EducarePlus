@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, Platform, Dimensions, Modal } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { Ionicons } from '@expo/vector-icons';
-import { useAuth } from "../app/context/AuthContext";
+import { useAuth } from '../src/context/AuthContext';
 
 const { width, height } = Dimensions.get('window');
 const isMobile = Platform.OS === 'ios' || Platform.OS === 'android';
@@ -137,7 +137,7 @@ export default function LoginScreen() {
         <View style={mobileStyles.logoSection}>
           <View style={mobileStyles.logoContainer}>
             <Image
-              source={require('../assets/5.png')} // Ensure you have this asset
+              source={require('../assets/images/5.png')}
               style={mobileStyles.logo}
               resizeMode="contain"
             />
@@ -258,7 +258,7 @@ export default function LoginScreen() {
         <View style={styles.leftSide}>
           <View style={styles.logoContainer}>
             <Image
-              source={require('../assets/5.png')} // Ensure you have this asset
+              source={require('../assets/images/5.png')}
               style={styles.logo}
               resizeMode="contain"
             />

@@ -1,7 +1,7 @@
 // app/index.js - Enhanced landing/dashboard router with role-based redirects
 import { useEffect } from 'react';
 import { useRouter } from 'expo-router';
-import { useAuth } from '../app/context/AuthContext';
+import { useAuth } from '../src/context/AuthContext';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
 
 export default function Index() {

@@ -1,9 +1,9 @@
-// src/app/(dashboard)/_layout.js
+// app/(dashboard)/_layout.js
 import { Slot, Redirect } from 'expo-router';
 import React from 'react';
 import { View, StyleSheet, Platform, ActivityIndicator } from 'react-native';
-import Sidebar from '../sidebar';
-import { useAuth } from '../../context/AuthContext';
+import Sidebar from '../../src/components/Sidebar';
+import { useAuth } from '../../src/context/AuthContext';
 
 export default function DashboardLayout() {
   const { user, loading } = useAuth();

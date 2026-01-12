@@ -1,4 +1,4 @@
-// app/sidebar.js - Enhanced with complete role-based navigation
+// src/components/Sidebar.js - Enhanced with complete role-based navigation
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, Platform, ScrollView } from 'react-native';
 import { useRouter, usePathname } from 'expo-router';
@@ -178,7 +178,7 @@ export default function Sidebar() {
     <View style={webStyles.sidebar}>
       <View style={webStyles.logoSection}>
         <Image
-          source={require('../assets/4.png')} // Ensure you have this asset
+          source={require('../../assets/images/4.png')}
           style={webStyles.logo}
           resizeMode="contain"
         />
