@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image } from 'react-native';
 import { Slot, useRouter, usePathname } from 'expo-router';
 
 // Navigation bar component with Home, Admission, About, Contact tabs
@@ -33,8 +33,49 @@ const NavigationBar = () => {
 
   return (
     <View style={styles.navbar}>
+      {/* Logos Section */}
+      <View style={styles.logosContainer}>
+        <Image 
+          source={require('../../assets/images/NagaCityLogo.png')} 
+          style={styles.nagaCityLogo}
+          resizeMode="contain"
+        />
+        <Image 
+          source={require('../../assets/images/EDUCARE-Program.png')} 
+          style={styles.educareProgramLogo}
+          resizeMode="contain"
+        />
+        <Image 
+          source={require('../../assets/images/SEED-Logo.png')} 
+          style={styles.seedLogo}
+          resizeMode="contain"
+        />
+      </View>
+
       {/* Logo/Brand */}
-      <Text style={styles.logo}>EducarePlus</Text>
+      {/* <Text style={styles.logo}>NAGA EARLY EDUCATION AND DEVELOPMENT</Text> */}
+      <View style={styles.titleContainer}>
+                  <Text
+                    style={[
+                      styles.logoTitle,
+                      {
+                        color: "#ffffff",
+                      },
+                    ]}
+                  >
+                    EDUCARE Service Program
+                  </Text>
+                  <Text
+                    style={[
+                      styles.logoSubtitle,
+                      {
+                        color: "#fbfcfc",
+                      },
+                    ]}
+                  >
+                    NAGA EARLY EDUCATION AND DEVELOPMENT
+                  </Text>
+                </View>
       
       {/* Navigation Links */}
       <View style={styles.navLinks}>
@@ -151,5 +192,44 @@ const styles = StyleSheet.create({
   footerText: {
     color: '#94a3b8',
     fontSize: 14,
+  },
+  logosContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 0,
+  },
+nagaCityLogo: {
+    width: 110,
+    height: 110,
+    marginRight: -17,
+  },
+  educareProgramLogo: {
+    width: 115,
+    height: 115,
+    marginRight: -25,
+  },
+  seedLogo: {
+    width: 115,
+    height: 115,
+    marginRight: 10,
+  },
+  titleContainer: {
+    alignItems: "flex-start",
+    justifyContent: "center",
+    marginLeft: -5,
+  },
+  logoTitle: {
+    fontSize: 14,
+    fontWeight: "400",
+    fontFamily: "Times New Roman",
+    letterSpacing: 0.5,
+    marginBottom: 2,
+  },
+    logoSubtitle: {
+    fontSize: 16.5,
+    fontWeight: "600",
+    fontFamily: "Times New Roman",
+    letterSpacing: 0.8,
+    color: "#1E90FF",
   },
 });
