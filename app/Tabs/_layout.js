@@ -109,17 +109,17 @@ const NavigationBar = () => {
     },
     {
       label: "Admission",
-      path: "/Tabs/admission",
+      path: "/Tabs/admissionTab",
       dropdown: [
         {
           label: "Enrollment Process",
-          path: "/Tabs/admission",
+          path: "/Tabs/admissionTab",
           section: "enrollment",
         },
-        { label: "How to Enroll", path: "/Tabs/admission", section: "how-to" },
+        { label: "How to Enroll", path: "/Tabs/admissionTab", section: "how-to" },
         {
           label: "Requirements to Enroll",
-          path: "/Tabs/admission",
+          path: "/Tabs/admissionTab",
           section: "requirements",
         },
       ],
