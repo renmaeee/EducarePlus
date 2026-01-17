@@ -1,6 +1,10 @@
 /**
- * Admission Page
- *
+ * admission.js
+ *  "http://localhost:8081/Tabs/admission"
+ * Main Admission screen and layout container.
+ * Displays instructions, headers, notices, and admission-related content.
+ * Does NOT handle tab routing. Uses child components for forms and date pickers.
+ * 
  * This is the public enrollment page where anyone can start the enrollment process
  * without logging in. It contains a "Start Enrollment" button that opens the
  * enrollment form.
