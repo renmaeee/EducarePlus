@@ -1,10 +1,3 @@
-/**
- *  Website Layout - FIXED VERSION 4
- *
- * This layout provides the main structure for the website.
- * FIX: Completely prevents flash of top content when clicking dropdown menus
- */
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   View,
@@ -109,17 +102,21 @@ const NavigationBar = () => {
     },
     {
       label: "Admission",
-      path: "/Tabs/admissionTab",
+      path: "/Tabs/admissionTab/admission",
       dropdown: [
         {
           label: "Enrollment Process",
-          path: "/Tabs/admissionTab",
+          path: "/Tabs/admissionTab/admission",
           section: "enrollment",
         },
-        { label: "How to Enroll", path: "/Tabs/admissionTab", section: "how-to" },
+        {
+          label: "How to Enroll",
+          path: "/Tabs/admissionTab//admission",
+          section: "how-to",
+        },
         {
           label: "Requirements to Enroll",
-          path: "/Tabs/admissionTab",
+          path: "/Tabs/admissionTab/admission",
           section: "requirements",
         },
       ],

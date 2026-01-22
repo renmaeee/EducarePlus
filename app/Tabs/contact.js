@@ -1,10 +1,3 @@
-/**
- * Contact Page
- *
- * This page provides contact information and a contact form
- * for visitors to reach out to EducarePlus.
- */
-
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { useLocalSearchParams, useFocusEffect } from "expo-router";
 import {

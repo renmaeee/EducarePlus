@@ -1,6 +1,3 @@
-// AgeEligibilityDatePicker.js
-// Handles child birthdate selection and validates age eligibility for enrollment.
-// Focused only on date selection and validation logic.
 import { useState } from 'react';
 
 export default function AgeEligibilityDatePicker({ onDateChange, minAge = 3, maxAge = 5 }) {

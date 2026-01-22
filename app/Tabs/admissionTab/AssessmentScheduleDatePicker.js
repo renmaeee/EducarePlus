@@ -1,6 +1,3 @@
-// AssessmentScheduleDatePicker.js
-// Handles assessment readiness schedule date selection.
-// Focused only on assessment scheduling logic.
 import { useState } from 'react';
 
 export default function AssessmentScheduleDatePicker({ onSchedule }) {
