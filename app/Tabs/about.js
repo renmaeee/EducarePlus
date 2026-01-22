@@ -1,10 +1,3 @@
-/**
- * About Page
- *
- * This page provides information about EducarePlus,
- * its mission, vision, and team.
- */
-
 import React, { useRef, useEffect, useCallback } from "react";
 import { View, Text, StyleSheet, ScrollView, Platform } from "react-native";
 import { useLocalSearchParams, useFocusEffect } from "expo-router";
