@@ -1,10 +1,3 @@
-/**
- * Home Page
- *
- * This is the landing page of the website.
- * It welcomes visitors and provides quick access to key features.
- */
-
 import React, { useRef, useEffect, useCallback } from "react";
 import {
   View,
@@ -83,7 +76,7 @@ export default function HomePage() {
         {/* Call to Action Button */}
         <TouchableOpacity
           style={styles.ctaButton}
-          onPress={() => router.push("/Tabs/admission")}
+          onPress={() => router.push("/Tabs/admissionTab/admission")}
         >
           <Text style={styles.ctaButtonText}>Enroll Your Child Today</Text>
         </TouchableOpacity>

@@ -1,6 +1,3 @@
-// PreRegistrationForm.js
-// Handles the pre-enrollment / pre-registration form.
-// Integrates AgeEligibilityDatePicker and manages form state and submission logic only.
 import { useState } from 'react';
 import AgeEligibilityDatePicker from './AgeEligibilityDatePicker';
 
