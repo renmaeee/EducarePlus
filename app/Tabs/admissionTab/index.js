@@ -11,7 +11,7 @@ import {
   Alert,
 } from "react-native";
 
-// ENROLLMENT FORM COMPONENT (for modal use)
+// ENROLLMENT FORM COMPONENT (for modal use).
 export function EnrollmentForm({ visible, onClose }) {
 
     // Step 1: Date of birth and age validation
